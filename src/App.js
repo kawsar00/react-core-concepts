@@ -65,7 +65,7 @@ const myFriends = [
       fetch('https://jsonplaceholder.typicode.com/users')
       .then(res => res.json())
       .then(data => setUsers(data))
-    })
+    },[])
     return(
       <div>
         <h3>Dynamic data:{users.length}</h3>
